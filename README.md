@@ -11,10 +11,31 @@ The get_recently_played_songs method returns the list of recently played songs f
 Please refer the test cases to validate code,
 Output of the test cases are as follows,
 
-Output of TestCase-1:
+TestCase-1
+Input:
+#adding 4 songs for user1
 
+store.add_song("user1", "song1")
+
+store.add_song("user1", "song2")
+
+store.add_song("user1", "song3")
+
+store.add_song("user1", "song4")
+
+Output:
 Playlist of User1: ['song4', 'song3', 'song2']
 
-Output of TestCase-2:
+TestCase-2
+Input:
+#adding 4 songs for user2
+store.add_song("user2", "song1")
 
+store.add_song("user2", "song1")
+
+store.add_song("user2", "song4")
+
+store.add_song("user2", "song1")
+
+Output:
 Playlist of User2: ['song1', 'song4', 'song1']
